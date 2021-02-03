@@ -126,7 +126,9 @@ public void randomWalk(int steps)
 {
     Random gen = new Random();
     penDown();
-    int angle = gen.nextInt(360) + 1;
-    //moveTo(math
+    double angle = gen.nextInt(360) + 1;
+    int x = steps * Math.cos(angle);
+    int y = steps * Math.sin(angle);
+    moveTo(steps * Math.cos(angle), steps * Math.sin(angle));
 }
 } // this } is the end of class Turtle, put all new methods before this
