@@ -87,5 +87,46 @@ public class Turtle extends SimpleTurtle
 
 
   }
-
+public void drawEqTriangle(int side)
+{
+    forward(side);
+    turn(120);
+    forward(side);
+    turn(120);
+    forward(side);
+    turn(120);
+}
+public void drawRec(int width, int height)
+{
+    forward(height);
+    turn(90);
+    forward(width);
+    turn(90);
+    forward(height);
+    turn(90);
+    forward(width);
+    turn(90);
+}
+public void drawHex(int side)
+{
+    forward(side);
+    turn(60);
+    forward(side);
+    turn(60);
+    forward(side);
+    turn(60);
+    forward(side);
+    turn(60);
+    forward(side);
+    turn(60);
+    forward(side);
+    turn(60);
+}
+public void randomWalk(int steps)
+{
+    Random gen = new Random();
+    penDown();
+    int angle = gen.nextInt(360) + 1;
+    //moveTo(math
+}
 } // this } is the end of class Turtle, put all new methods before this
